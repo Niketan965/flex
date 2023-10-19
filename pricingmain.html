@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<style>
+    .pricing-container{
+        width: 962px;
+        height: 427px;
+        height: auto;
+        background-color: #F4F2FD;
+        padding: 32px 48px 32px 48px;
+        position: relative;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        
+
+    }
+
+    .pricing{
+        background-color: white;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25); 
+        border-radius: 8px;
+        padding: 32px;
+        
+
+    }
+
+    .pricing-card-1{
+        width: 200px;
+        height: 315px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .pricing-card-2{
+        width: 200px;
+        height: 315px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #202842;
+    }
+
+    .pricing-card-3{
+        width: 200px;
+        height: 315px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .card-details{
+        gap: 32px; 
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .card-detail{
+        gap: 16px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    .card-header{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        
+    }
+    .frame-1{
+        color: #202842;
+        font-size: 32px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        line-height: 32px;
+        word-wrap: break-word;
+        padding: 4px 8px 4px 8px;
+    }
+    .frame-2{
+        color: #202842;
+        font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 500;
+        line-height: 16px;
+        word-wrap: break-word;
+        padding: 0px 8px 0px 8px;
+    }
+    .frame-6-3{
+        padding-top: 8px; padding-bottom: 4px; padding-left: 4px; padding-right: 6px; justify-content: center; align-items: center;  display: inline-flex;
+        color: #202842;
+        font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 500;
+        line-height: 16px;
+        word-wrap: break-word;
+    }
+    .price{
+        color: #202842;
+        font-size: 36px;
+        font-family: Sans Serif Collection;
+        font-weight: 400;
+        line-height: 36px;
+        word-wrap: break-word;
+        padding:  0px 8px 0px 8px;
+    }
+    .plan-details{
+        
+        padding-left: 8px; 
+        flex-direction: column; 
+        justify-content: flex-start; 
+        align-items: flex-start; 
+        display: inline-flex;
+        
+    }
+    .group-1{
+         
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .frame-3{
+        
+        padding-left: 4px; padding-right: 4px; padding-top: 3px; padding-bottom: 3px; 
+        justify-content: flex-start; align-items: flex-start;  display: inline-flex;
+        
+    }
+    .frame-4{
+         padding-top: 8px; padding-bottom: 4px; padding-left: 4px; padding-right: 8px; justify-content: center; align-items: center;  display: inline-flex;
+        color: #202842;
+        font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 500;
+        line-height: 16px;
+        word-wrap: break-word;
+        
+         
+    }
+    .group-2{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .frame-5{
+        
+        
+        padding-left: 4px; padding-right: 4px; padding-top: 3px; padding-bottom: 3px; 
+        justify-content: space-between; align-items: flex-start;  display: inline-flex;
+       
+    }
+    .frame-6{
+        padding-top: 8px; padding-bottom: 4px; padding-left: 4px; padding-right: 8px; justify-content: center; align-items: center;  display: inline-flex;
+         color: #202842;
+        font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 500;
+        line-height: 16px;
+        word-wrap: break-word;
+         
+         
+    }
+    .subscribe-button{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        
+     
+
+    }
+    .button-1{
+        padding: 8px 24px 8px 24px; 
+        background-color: #202842;
+        border-radius: 50px; 
+        color: #F4F2FD;
+        font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        line-height: 22px;
+        word-wrap: break-word;
+        
+
+    }
+    .button-2{
+        padding: 8px 24px 8px 24px; 
+        background-color: #F4F2FD;
+        border-radius: 50px; 
+        color: #202842;
+        font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        line-height: 22px;
+        word-wrap: break-word;
+    }
+
+    .frame-7{
+        color: white;
+        font-size: 32px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        line-height: 32px;
+        word-wrap: break-word;
+        padding: 4px 8px 4px 8px;
+    }
+    .frame{
+        color: white;
+    }
+    
+
+</style>
+<body>
+    <div class="pricing-container" >
+        <div class="pricing pricing-card-1">
+            <div class="card-details">
+                <div class="card-detail">
+                    <div class="card-header">
+                        <div class="header-name">
+                            <div class="frame-1">
+                                Free Plan
+                            </div>
+                            <div class="frame-2">
+                                For Personal
+                            </div>
+                        </div>
+                        <div class="price">&#36;0</div>
+                    </div>
+                    <div class="plan-details">
+                        <div class="group-1">
+                            <div class="frame-3">
+                                <img src="./check-mark 1.png" alt="list">
+                            </div>
+                            <div class="frame-4">
+                                1 users
+                            </div>
+                            
+                        </div>
+                        <div class="group-2">
+                            <div class="frame-5">
+                                <img src="./check-mark 1.png" alt="list">
+                            </div>
+                            <div class="frame-6">
+                                4 Web-users
+                            </div>
+                            
+                        </div>
+                        <div class="group-2">
+                            <div class="frame-5">
+                                <img src="./check-mark 1.png" alt="list">
+                            </div>
+                            <div class="frame-6">
+                                Responsive Website
+                            </div>
+                            
+                        </div>
+                        <div class="group-2">
+                            <div class="frame-5">
+                                <img src="./check-mark 1.png" alt="list">
+                            </div>
+                            <div class="frame-6">
+                                Free SSL
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <div class="subscribe-button">
+                    <button class="button-1">Subscribe now</button>
+                </div>
+            </div>
+        </div>
+        <div class="pricing pricing-card-2">
+            <div class="card-details">
+                <div class="card-detail">
+                    <div class="card-header">
+                        <div class="header-name">
+                            <div class="frame frame-1">
+                                Basic Plan
+                            </div>
+                            <div class="frame frame-2">
+                                For small business
+                            </div>
+                        </div>
+                        <div class="frame price">&#36;29</div>
+                    </div>
+                    <div class="plan-details">
+                        <div class="group-1">
+                            <div class="frame-3">
+                                <img src="./check-mark 2.png" alt="list">
+                            </div>
+                            <div class="frame frame-4">
+                                4 users
+                            </div>
+                            
+                        </div>
+                        <div class="group-2">
+                            <div class="frame frame-5">
+                                <img src="./check-mark 2.png" alt="list">
+                            </div>
+                            <div class="frame frame-6">
+                                10 Web-users
+                            </div>
+                            
+                        </div>
+                        <div class="group-2">
+                            <div class="frame-5">
+                                <img src="./check-mark 2.png" alt="list">
+                            </div>
+                            <div class="frame frame-6">
+                                Responsive Website
+                            </div>
+                            
+                        </div>
+                        <div class="group-2">
+                            <div class=" frame-5">
+                                <img src="./check-mark 2.png" alt="list">
+                            </div>
+                            <div class="frame frame-6">
+                                Free SSL
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <div class="subscribe-button">
+                    <button class="button-2">Subscribe now</button>
+                </div>
+            </div>
+        </div>
+        <div class="pricing pricing-card-3">
+            <div class="card-details">
+                <div class="card-detail">
+                    <div class="card-header">
+                        <div class="header-name">
+                            <div class="frame-1">
+                                Pro Plan
+                            </div>
+                            <div class="frame-2">
+                                For enterprise
+                            </div>
+                        </div>
+                        <div class="price">&#36;49</div>
+                    </div>
+                    <div class="plan-details">
+                        <div class="group-1">
+                            <div class="frame-3">
+                                <img src="./check-mark 1.png" alt="list">
+                            </div>
+                            <div class="frame-4">
+                                Unlimited users
+                            </div>
+                            
+                        </div>
+                        <div class="group-2">
+                            <div class="frame-5">
+                                <img src="./check-mark 1.png" alt="list">
+                            </div>
+                            <div class="frame-6-3">
+                                Unlimited Web mails
+                            </div>
+                            
+                        </div>
+                        <div class="group-2">
+                            <div class="frame-5">
+                                <img src="./check-mark 1.png" alt="list">
+                            </div>
+                            <div class="frame-6">
+                                Responsive Website
+                            </div>
+                            
+                        </div>
+                        <div class="group-2">
+                            <div class="frame-5">
+                                <img src="./check-mark 1.png" alt="list">
+                            </div>
+                            <div class="frame-6">
+                                Free SSL + SEO
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <div class="subscribe-button">
+                    <button class="button-1">Subscribe now</button>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
